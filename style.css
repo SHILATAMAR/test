@@ -1,7 +1,7 @@
 body {
     background-color: black;
     margin-top: 0%;
-    /* color: white; */
+    color: white;
 }
 
 header {
@@ -14,12 +14,19 @@ header {
     margin: 20px auto;
     margin-top: 0%;
     box-shadow: 0 0 3px #00ff66;
+    padding: 5px;
 }
 
-header span {
+#HeadIcon {
+    color: black;
     border-radius: 50%;
     background-color: #00ff66;
     padding: 0.3%;
+}
+
+#HeadIcon:hover {
+    box-shadow: 0 0 10px #00ff66;
+    transform: rotate(180deg);
 }
 
 header p {
@@ -36,19 +43,24 @@ header p {
     background-color: black;
 }
 
+#btn:hover {
+    background-color: #0e4c42;
+}
+
 /* סורק */
 #sec1 {
     position: relative;
     width: 80%;
-    height: 50vh;
+    height: 40vh;
     margin: 20px auto;
-    align-items: center;
     background-color: #13141f;
     border-radius: 12px;
     border: 1px solid #22253b;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start; /* הצמדת התוכן להתחלה (שמאל) */
+    padding-left: 40px;          /* מרווח מדויק וקבוע מהדופן השמאלית */
+    gap: 180px;
 }
 
 #sec1:hover {
@@ -64,7 +76,7 @@ header p {
     box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
         inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
     background:
-        repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px),
+        repeating-radial-gradient(transparent 0 23px, #113116 24px 26px, #0000 27px),
         linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
         linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
         linear-gradient(#333, #111);
@@ -90,7 +102,6 @@ header p {
     }
 }
 
-.radar,
 .sweep {
     position: absolute;
 }
@@ -161,6 +172,13 @@ header p {
     text-align: center;
 }
 
+.btnn:hover {
+    border: 1px solid #00ff66;
+    transform: scale(1.1);
+    background-color: #0e4c42;
+}
+
+/*  כרטיסים  */
 .card {
     border: 1px solid #22253b;
     border-radius: 10px;
@@ -168,6 +186,11 @@ header p {
     width: 25%;
     padding: 1%;
     background-color: #13141f;
+}
+
+.card:hover {
+    transform: skew(-2deg, 1deg) translateY(-4px);
+    border: 2px solid #00ff66;
 }
 
 .card button {
@@ -196,6 +219,11 @@ header p {
     border-left: 3px solid yellow;
 }
 
+#card2:hover,
+#card4:hover {
+    border-left: 3px solid #00ff66;
+}
+
 #card2 button,
 #card4 button {
     background-color: rgb(45, 45, 14);
@@ -220,4 +248,54 @@ header p {
     text-align: center;
     border-radius: 5px;
     padding: 10px;
+}
+
+#warn:hover {
+    transform: scale(1.1);
+    background-color: #2b0d14;
+}
+
+#sec2 label {
+    color: #00ff66;
+}
+
+/* 
+progress {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #1a2633;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+    background-color: #00ff66;
+    /* צבע המילוי (ירוק ניאון) */
+/* border-radius: 4px;
+}  */
+
+#link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #1a2633;
+    padding: 5px;
+}
+
+.footerItem {
+    text-align: center;
+}
+
+.footerItem:hover {
+    color: #00ff66;
+    border-bottom: 1px solid #00ff66;
+    transform: scale(1.1);
 }

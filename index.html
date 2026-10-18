@@ -7,13 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shield,bolt,arrow_forward_ios,travel" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shield,bolt,arrow_forward_ios,travel,wifi_tethering,description,vital_signs,help" />
 </head>
 
 <body>
     <header>
-        <!-- <button> 🛡️ </button> -->
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined" id="HeadIcon">
             shield
         </span>
         <p> SIGING OPS </p>
@@ -53,31 +52,61 @@
     </div>
     <section id="sec2">
         <div id="card1" class="card">
-            <button> CRITICAL </button>
-            <p> In progress </p>
+            <div id="line">
+                <button> CRITICAL </button>
+                <p> In progress </p>
+            </div>
             <h3> Operation Nightfall </h3>
-            <p></p>
+            <progress id="file" max="100" value="65">65%</progress>
+            <label for="file"> 65% </label>
         </div>
         <div id="card2" class="card">
             <button> HIGH </button>
             <p> Analyzing </p>
             <h3> Signal Intercept Alpha </h3>
-            <p></p>
+            <progress id="file" max="100" value="40">40%</progress>
+            <label for="file"> 40% </label>
         </div>
         <div id="card3" class="card">
             <button> MEDIUM </button>
             <p> Pending </p>
             <h3> Asset Recovry </h3>
-            <p></p>
+            <progress id="file" max="100" value="15">15%</progress>
+            <label for="file"> 15% </label>
         </div>
         <div id="card4" class="card">
             <button> HIGH </button>
             <p> Active </p>
             <h3> Cyber Defense Grid </h3>
-            <p></p>
+            <progress id="file" max="100" value="80">80%</progress>
+            <label for="file"> 80% </label>
         </div>
     </section>
-    <div id="warn"> THREAD DETECTED </div>
+    <div id="warn"> THREAT DETECTED </div>
+    <footer>
+        <a class="footerItem">
+            <span class="material-symbols-outlined">
+                vital_signs
+            </span>
+            <p> Deshboard </p>
+        </a>
+        <a class="footerItem">
+            <span class="material-symbols-outlined">
+                wifi_tethering
+            </span>
+            <p> Feed </p>
+        </a>
+        <a class="footerItem">
+            <span class="material-symbols-outlined">
+                description
+            </span>
+            <p> Brief </p>
+        </a>
+
+        <span class="material-symbols-outlined">
+            help
+        </span>
+    </footer>
 </body>
 
 </html>
