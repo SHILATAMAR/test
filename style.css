@@ -14,16 +14,15 @@ header {
     margin: 20px auto;
     margin-top: 0%;
     box-shadow: 0 0 3px #00ff66;
-    /* box-shadow: inset #00ff66; */
 }
 
-.material-symbols-outlined {
+header span {
     border-radius: 50%;
     background-color: #00ff66;
     padding: 0.3%;
 }
 
-p {
+header p {
     color: #00ff66;
     letter-spacing: 2px;
     margin: 0;
@@ -40,7 +39,7 @@ p {
 /* סורק */
 #sec1 {
     position: relative;
-    width: 85%;
+    width: 80%;
     height: 50vh;
     margin: 20px auto;
     align-items: center;
@@ -52,9 +51,8 @@ p {
     justify-content: space-around;
 }
 
-.radar,
-.sweep {
-    position: relative;
+#sec1:hover {
+    border: 1px solid #00ff66;
 }
 
 .radar {
@@ -103,16 +101,27 @@ p {
 
 /*  הנקודות באמצע  */
 .blip {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #00ff66;
-  border-radius: 50%;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #00ff66;
+    border-radius: 50%;
 }
 
-.blip-1 { top: 35%; left: 60%; }
-.blip-2 { top: 55%; left: 40%; }
-.blip-3 { top: 70%; left: 70%; }
+.blip-1 {
+    top: 35%;
+    left: 60%;
+}
+
+.blip-2 {
+    top: 55%;
+    left: 40%;
+}
+
+.blip-3 {
+    top: 70%;
+    left: 70%;
+}
 
 /*  צד שמאל  */
 .TextContainer {
@@ -134,4 +143,81 @@ p {
     font-size: 12px;
     color: #5b7365;
     letter-spacing: 1px;
+}
+
+/*  כפתורים  */
+#button {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.btnn {
+    border-radius: 20px;
+    background-color: #13141f;
+    color: white;
+    border: 1px solid #22253b;
+    padding: 7px;
+    margin: 3px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #22253b;
+    border-radius: 10px;
+    margin: 10px;
+    width: 25%;
+    padding: 1%;
+    background-color: #13141f;
+}
+
+.card button {
+    border-radius: 5px;
+}
+
+#card1,
+#card3 {
+    border-left: 3px solid #00ff66;
+}
+
+#card1 button {
+    background-color: #1a080c;
+    color: red;
+    border: 1px solid red;
+}
+
+#card3 button {
+    background-color: #0a2113;
+    color: #00ff66;
+    border: 1px solid #00ff66;
+}
+
+#card2,
+#card4 {
+    border-left: 3px solid yellow;
+}
+
+#card2 button,
+#card4 button {
+    background-color: rgb(45, 45, 14);
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+#sec2 {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    color: white;
+}
+
+#warn {
+    width: 80%;
+    height: 30px;
+    border: 2px solid red;
+    background-color: #1a080c;
+    color: red;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
 }
