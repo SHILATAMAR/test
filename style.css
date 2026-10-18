@@ -58,8 +58,8 @@ header p {
     border: 1px solid #22253b;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* הצמדת התוכן להתחלה (שמאל) */
-    padding-left: 40px;          /* מרווח מדויק וקבוע מהדופן השמאלית */
+    justify-content: flex-start;
+    padding-left: 40px;
     gap: 180px;
 }
 
@@ -238,6 +238,17 @@ header p {
     color: white;
 }
 
+#sec2 label {
+    color: #00ff66;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*  אזהרה  */
 #warn {
     width: 80%;
     height: 30px;
@@ -255,32 +266,7 @@ header p {
     background-color: #2b0d14;
 }
 
-#sec2 label {
-    color: #00ff66;
-}
-
-/* 
-progress {
-    -webkit-appearance: none;
-    width: 90%;
-    height: 8px;
-    border-radius: 4px;
-    background-color: #1a2633;
-    overflow: hidden;
-}
-
-progress::-webkit-progress-value {
-    background-color: #00ff66;
-    /* צבע המילוי (ירוק ניאון) */
-/* border-radius: 4px;
-}  */
-
-#link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/*  footer  */
 footer {
     width: 100%;
     display: flex;
